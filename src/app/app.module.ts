@@ -5,11 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
+import { WorkspacesComponent } from './workspaces/workspaces.component';
+import { BoardsComponent } from './boards/boards.component';
+import { CreateComponent } from './create/create.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    WorkspacesComponent,
+    BoardsComponent,
+    CreateComponent
   ],
   imports: [
     BrowserModule,
