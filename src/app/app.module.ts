@@ -4,10 +4,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { HttpClientModule } from "@angular/common/http";
 import { HeaderComponent } from './header/header.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
 import { WorkspacesComponent } from './workspaces/workspaces.component';
 import { BoardsComponent } from './boards/boards.component';
 import { CreateComponent } from './create/create.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatButtonModule } from '@angular/material/button';
+import { MatListModule } from '@angular/material/list';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -16,11 +26,23 @@ import { CreateComponent } from './create/create.component';
     WorkspacesComponent,
     BoardsComponent,
     CreateComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatSidenavModule,
+    HttpClientModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    LayoutModule,
+    MatButtonModule,
+    MatListModule,
+    MatCardModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

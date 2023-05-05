@@ -1,1 +1,21 @@
-<p>header works!</p>
+<mat-toolbar  color="primary">
+
+    <mat-icon svgIcon="trello" ></mat-icon>
+    <span>Trello</span>
+    <span class="spacer"></span>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" routerLink="/">
+      <mat-icon>home</mat-icon>
+    </button>
+    
+    
+     
+      <button mat-raised-button routerLink="/workspaces">Workspaces</button>
+      <button mat-button routerLink="/boards">Boards</button>
+      <button mat-button routerLink="/card-list">Create</button>
+      <span class="spacer"></span>
+    
+    <mat-form-field>
+        <input matInput placeholder="Search">
+      </mat-form-field>
+    
+    </mat-toolbar>

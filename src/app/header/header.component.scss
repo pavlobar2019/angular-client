@@ -1,0 +1,24 @@
+.mat-toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+    .mat-icon {
+      margin-right: 10px;
+    }
+  
+    .spacer {
+      flex-grow: 1;
+    }
+  
+    .example-icon {
+      margin-right: 10px;
+    }
+  
+    .mat-form-field {
+      width: 300px;
+    }
+  }
+  
+  
