@@ -4,13 +4,13 @@ import { WorkspacesComponent } from './workspaces/workspaces.component';
 import { BoardsComponent } from './boards/boards.component';
 import { CreateComponent } from './create/create.component';
 import { HeaderComponent } from './header/header.component';
-import { LoginComponent } from './login/login.component';
-import { AuthGuard } from './auih.guard';
+//import { LoginComponent } from './login/login.component';
+//import { AuthGuard } from './auih.guard';
 
 const routes: Routes = [
-  { path: '', component: HeaderComponent, canActivate: [AuthGuard] },
+  //{ path: '', component: HeaderComponent, canActivate: [AuthGuard] },
   //{ path: 'login', component: LoginComponent },
-  
+  { path: '', component: HeaderComponent},
   { path: 'boards', component: BoardsComponent },
   { path: 'workspaces', component: WorkspacesComponent },
   { path: 'create', component: CreateComponent },
