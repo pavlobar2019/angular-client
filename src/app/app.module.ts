@@ -18,6 +18,8 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
+import { LoginComponent } from './login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import {MatCardModule} from '@angular/material/card';
     HeaderComponent,
     WorkspacesComponent,
     BoardsComponent,
-    CreateComponent
+    CreateComponent,
+    LoginComponent
 
   ],
   imports: [
@@ -41,8 +44,8 @@ import {MatCardModule} from '@angular/material/card';
     LayoutModule,
     MatButtonModule,
     MatListModule,
-    MatCardModule
-
+    MatCardModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
