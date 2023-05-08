@@ -9,7 +9,7 @@ import { AuthGuard } from './auih.guard';
 
 const routes: Routes = [
   { path: '', component: HeaderComponent, canActivate: [AuthGuard] },
-  { path: 'login', component: LoginComponent },
+  //{ path: 'login', component: LoginComponent },
   
   { path: 'boards', component: BoardsComponent },
   { path: 'workspaces', component: WorkspacesComponent },
